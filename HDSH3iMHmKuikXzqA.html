@@ -1,0 +1,365 @@
+<html><head><base href="https://hwashine.tw/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>華翔興業有限公司 - 專業有機顏料與溶劑染料供應商</title>
+<meta name="description" content="華翔興業有限公司專注於提供高品質有機顏料、溶劑染料、螢光增白劑及光固化劑TPO，為塗料、油墨、塑料等產業提供專業解決方案。">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+  :root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+  }
+
+  body {
+    font-family: 'Noto Sans TC', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    animation: ripple 15s infinite linear;
+    z-index: 1;
+  }
+
+  @keyframes ripple {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+  }
+
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 2;
+  }
+
+  nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0.5rem;
+  }
+
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+
+  nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  #news-ticker {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  #news-ticker-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 30s linear infinite;
+  }
+
+  @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  section:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .search-container input {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+  }
+
+  .search-container button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-container button:hover {
+    background-color: var(--secondary-color);
+  }
+
+  #search-results {
+    margin-top: 2rem;
+  }
+
+  .search-result-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+
+  .search-result-item h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+  }
+
+  .search-result-item p {
+    margin: 0;
+  }
+
+  footer {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+
+  footer nav a:hover {
+    color: var(--accent-color);
+  }
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    
+    .search-container {
+      flex-direction: column;
+    }
+
+    .search-container input,
+    .search-container button {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .search-container button {
+      margin-top: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>華翔興業有限公司</h1>
+    <p>專業有機顏料與溶劑染料供應商</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#home">首頁</a></li>
+      <li><a href="#products">產品</a></li>
+      <li><a href="#about">關於我們</a></li>
+      <li><a href="#contact">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+  <div id="news-ticker">
+    <div id="news-ticker-content">
+      最新消息：華翔興業推出新型環保顏料系列 | 2023年產品展覽會即將開始 | 我們榮獲2023年度優質供應商獎 | 新的客戶服務專線現已開通
+    </div>
+  </div>
+
+  <main>
+    <section id="search">
+      <h2>網站搜尋</h2>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="輸入關鍵字搜尋">
+        <button id="search-button">搜尋</button>
+      </div>
+      <div id="search-results"></div>
+    </section>
+
+    <section id="home">
+      <h2>歡迎來到華翔興業</h2>
+      <p>華翔興業有限公司專注於提供高品質有機顏料、溶劑染料、螢光增白劑及光固化劑TPO，為塗料、油墨、塑料等產業提供專業解決方案。我們以卓越的品質和創新的產品，致力於滿足客戶多樣化的需求。</p>
+    </section>
+
+    <section id="products">
+      <h2>我們的產品</h2>
+      <p>我們提供多種高品質的顏料和染料產品，包括：</p>
+      <ul>
+        <li>有機顏料</li>
+        <li>溶劑染料</li>
+        <li>螢光增白劑</li>
+        <li>光固化劑TPO</li>
+      </ul>
+      <p>欲了解更多產品詳情，請使用上方的搜尋功能或聯繫我們的銷售團隊。</p>
+    </section>
+
+    <section id="about">
+      <h2>關於我們</h2>
+      <p>華翔興業有限公司是一家專業的顏料供應商，致力於為客戶提供高品質的有機顏料、溶劑染料和螢光增白劑。我們擁有豐富的行業經驗和專業知識，能夠為各種應用領域提供最適合的顏料解決方案。</p>
+      <p>我們的服務範圍廣泛，無論您是尋求新品開發、希望降低成本、尋找備用貨源，還是需要在台灣就地採購，華翔都能成為您可靠的合作夥伴。我們靈活的業務模式使我們能夠滿足各種客戶需求，從小批量的特殊訂單到大規模的工業需求，我們都能勝任。</p>
+    </section>
+
+    <section id="contact">
+      <h2>聯絡我們</h2>
+      <p>我們非常重視您的意見和查詢。請通過以下方式與我們聯繫：</p>
+      <ul>
+        <li>電子郵件：<a href="mailto:sam@hwashine.tw">sam@hwashine.tw</a></li>
+        <li>電話：<a href="tel:+886287292906">02-87292906</a></li>
+        <li>地址：臺北市信義區信義路5段7號37樓</li>
+        <li>營業時間：週一至週五 9:00-18:00</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 華翔興業有限公司 版權所有</p>
+    <nav>
+      <a href="/privacy">隱私政策</a> |
+      <a href="/terms">使用條款</a>
+    </nav>
+  </footer>
+
+  <script>
+    // 模擬網站內容數據
+    const siteContent = [
+      { title: "首頁", content: "華翔興業有限公司專注於提供高品質有機顏料、溶劑染料、螢光增白劑及光固化劑TPO，為塗料、油墨、塑料等產業提供專業解決方案。", url: "#home" },
+      { title: "有機顏料", content: "我們提供多種有機顏料，適用於各種應用，包括塗料、油墨和塑料。", url: "#products" },
+      { title: "溶劑染料", content: "高品質溶劑染料，適用於多種工業應用。", url: "#products" },
+      { title: "螢光增白劑", content: "提供優質螢光增白劑，為您的產品增添亮度。", url: "#products" },
+      { title: "光固化劑TPO", content: "專業的光固化劑TPO，適用於UV固化系統。", url: "#products" },
+      { title: "關於我們", content: "華翔興業有限公司是一家專業的顏料供應商，致力於為客戶提供高品質的有機顏料、溶劑染料和螢光增白劑。", url: "#about" },
+      { title: "聯絡我們", content: "電子郵件：sam@hwashine.tw，電話：02-87292906，地址：臺北市信義區信義路5段7號37樓", url: "#contact" }
+    ];
+
+    const searchInput = document.getElementById('search-input');
+    const searchButton = document.getElementById('search-button');
+    const searchResults = document.getElementById('search-results');
+
+    searchButton.addEventListener('click', performSearch);
+    searchInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+
+    function performSearch() {
+      const query = searchInput.value.toLowerCase();
+      const results = siteContent.filter(item => 
+        item.title.toLowerCase().includes(query) || 
+        item.content.toLowerCase().includes(query)
+      );
+
+      displayResults(results);
+    }
+
+    function displayResults(results) {
+      searchResults.innerHTML = '';
+      if (results.length === 0) {
+        searchResults.innerHTML = '<p>沒有找到相關結果。</p>';
+        return;
+      }
+
+      results.forEach(result => {
+        const resultItem = document.createElement('div');
+        resultItem.className = 'search-result-item';
+        resultItem.innerHTML = `
+          <h3><a href="${result.url}">${result.title}</a></h3>
+          <p>${result.content}</p>
+        `;
+        searchResults.appendChild(resultItem);
+      });
+    }
+  </script>
+</body>
+</html>
