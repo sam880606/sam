@@ -1,13 +1,9 @@
 <html><head><base href="https://hwashine.tw/"><link rel="icon" href="./favicon.ico" type="image/x-icon">
-<title>華翔興業有限公司 - 有機顏料與溶劑染料供應商</title>
+<title>華翔興業有限公司 - 有機顏料與溶剤染料供應商</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="Description" content="華翔興業有限公司專注於優質有機顏料和溶劑染料，提供有機顏料、溶劑染料、螢光增白劑、光固化劑TPO等產品，為塗料、油墨、塑料提供專業解決方案。 ">
+<meta name="Description" content="華翔興業有限公司專注於優質有機顏料和溶溶劑染料，提供有機顏料、溶剂染料、螢光增白劑、光固化劑TPO等產品，為塗料、油墨、塑料提供專業解決方案。 ">
 <meta name="keywords" content="顏料,溶劑染料,華翔,增白劑,光固化劑TPO,顏料紅122,顏料紫19,顏料黃150,顏料紫23">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>華翔興業有限公司 - 專業有機顏料與溶劑染料供應商</title>
-<meta name="description" content="華翔興業有限公司專注於提供高品質有機顏料、溶劑染料、螢光增白劑及光固化劑TPO，為塗料、油墨、塑料等產業提供專業解決方案。">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
 
@@ -181,26 +177,6 @@
     background-color: var(--secondary-color);
   }
 
-  #search-results {
-    margin-top: 2rem;
-  }
-
-  .search-result-item {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background-color: #f8f9fa;
-    border-radius: 4px;
-  }
-
-  .search-result-item h3 {
-    margin: 0 0 0.5rem 0;
-    color: var(--primary-color);
-  }
-
-  .search-result-item p {
-    margin: 0;
-  }
-
   footer {
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     color: white;
@@ -218,6 +194,111 @@
 
   footer nav a:hover {
     color: var(--accent-color);
+  }
+
+  .featured-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .product-card {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .product-card h3 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+  }
+
+  .product-icon {
+    width: 100%;
+    height: 200px;
+    background: var(--bg-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news-section {
+    margin-top: 2rem;
+  }
+
+  .news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .news-card {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .news-card h3 {
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+  }
+
+  .news-date {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .pagination button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pagination button:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
   }
 
   @media (max-width: 768px) {
@@ -244,7 +325,7 @@
 <body>
   <header>
     <h1>華翔興業有限公司</h1>
-    <p>專業有機顏料與溶劑染料供應商</p>
+    <p>專業有機顏料與溶溶劑染料供應商</p>
   </header>
   
   <nav>
@@ -269,30 +350,94 @@
         <input type="text" id="search-input" placeholder="輸入關鍵字搜尋">
         <button id="search-button">搜尋</button>
       </div>
-      <div id="search-results"></div>
     </section>
 
-    <section id="home">
-      <h2>歡迎來到華翔興業</h2>
-      <p>華翔興業有限公司專注於提供高品質有機顏料、溶劑染料、螢光增白劑及光固化劑TPO，為塗料、油墨、塑料等產業提供專業解決方案。我們以卓越的品質和創新的產品，致力於滿足客戶多樣化的需求。</p>
+    <section id="featured-products">
+      <h2>主要產品</h2>
+      <div class="featured-products">
+        <a href="products/organic-pigments" class="product-card">
+          <div class="product-icon">
+            <img 
+              src="DALL·E 2024-11-16 16.34.48 - A person holding vibrant pigment powders in their hands, showcasing a variety of colors like red, blue, yellow, and green. The powders are finely text.webp"
+              alt="多彩顏料粉末特寫，展示不同色系的細緻粉末顏料" 
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;"
+            >
+          </div>
+          <h3>有機顏料</h3>
+          <p>高品質有機顏料，適用於各類油墨和塗料應用</p>
+        </a>
+
+        <a href="products/solvent-dyes" class="product-card">
+          <div class="product-icon">
+            <img 
+              src="DALL·E 2024-11-16 16.43.24 - A display of finished plastic products made using solvent dyes, emphasizing their vibrant and translucent qualities. The scene includes various items .webp"
+              alt="展示使用溶劑染料製成的塑膠製品，呈現出不同顏色的透明和半透明效果" 
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;"
+            >
+          </div>
+          <h3>溶劑染料</h3>
+          <p>優質溶劑染料，具有優異的溶解性和著色力</p>
+        </a>
+
+        <a href="products/fluorescent-whitening-agents" class="product-card">
+          <div class="product-icon">
+            <img 
+              src="DALL·E 2024-11-16 16.51.19 - A highly realistic close-up image of a white fabric treated with fluorescent whitening agent, under ultraviolet (UV) light. The fabric emits a distinc.webp"
+              alt="在紫外光下發出明亮螢光的白色織物特寫，展示螢光增白劑的效果" 
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;"
+            >
+          </div>
+          <h3>螢光增白劑</h3>
+          <p>高效能螢光增白劑，提供優異的白度提升效果</p>
+        </a>
+
+        <a href="products/photo-initiator-tpo" class="product-card">
+          <div class="product-icon">
+            <img 
+              src="DALL·E 2024-11-16 16.55.00 - A realistic image of a product undergoing UV curing process. The product surface is a glossy, transparent coating being cured by ultraviolet (UV) ligh.webp"
+              alt="UV固化過程特寫，展示在紫外光照射下的透明塗層固化效果" 
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;"
+            >
+          </div>
+          <h3>光固化劑TPO</h3>
+          <p>專業光固化劑TPO，適用於UV固化系統</p>
+        </a>
+      </div>
     </section>
 
-    <section id="products">
-      <h2>我們的產品</h2>
-      <p>我們提供多種高品質的顏料和染料產品，包括：</p>
-      <ul>
-        <li>有機顏料</li>
-        <li>溶劑染料</li>
-        <li>螢光增白劑</li>
-        <li>光固化劑TPO</li>
-      </ul>
-      <p>欲了解更多產品詳情，請使用上方的搜尋功能或聯繫我們的銷售團隊。</p>
-    </section>
-
-    <section id="about">
-      <h2>關於我們</h2>
-      <p>華翔興業有限公司是一家專業的顏料供應商，致力於為客戶提供高品質的有機顏料、溶劑染料和螢光增白劑。我們擁有豐富的行業經驗和專業知識，能夠為各種應用領域提供最適合的顏料解決方案。</p>
-      <p>我們的服務範圍廣泛，無論您是尋求新品開發、希望降低成本、尋找備用貨源，還是需要在台灣就地採購，華翔都能成為您可靠的合作夥伴。我們靈活的業務模式使我們能夠滿足各種客戶需求，從小批量的特殊訂單到大規模的工業需求，我們都能勝任。</p>
+    <section id="news">
+      <h2>最新消息</h2>
+      <div class="news-grid">
+        <a href="news/2023-07-15-new-eco-products" class="news-card">
+          <p class="news-date">2023-07-15</p>
+          <h3>新產品發布</h3>
+          <p>我們推出了新的環保顏料系列，符合最新的環保標準。</p>
+        </a>
+        <a href="news/2023-07-01-technical-seminar" class="news-card">
+          <p class="news-date">2023-07-01</p>
+          <h3>技術研討會</h3>
+          <p>即將舉辦年度技術研討會，歡迎業界夥伴參加。</p>
+        </a>
+        <a href="news/2023-06-15-award" class="news-card">
+          <p class="news-date">2023-06-15</p>
+          <h3>榮獲優質供應商獎</h3>
+          <p>華翔興業榮獲2023年度優質供應商獎項肯定。</p>
+        </a>
+        <a href="news/2023-06-01-service" class="news-card">
+          <p class="news-date">2023-06-01</p>
+          <h3>客戶服務提升</h3>
+          <p>新的客戶服務專線現已開通，為您提供更優質的服務。</p>
+        </a>
+        <a href="news/2023-05-15-exhibition" class="news-card">
+          <p class="news-date">2023-05-15</p>
+          <h3>展覽會預告</h3>
+          <p>2023年產品展覽會即將開始，誠摯邀請您參與。</p>
+        </a>
+      </div>
+      <div class="pagination">
+        <button id="prevPage" disabled>上一頁</button>
+        <button id="nextPage">下一頁</button>
+      </div>
     </section>
 
     <section id="contact">
@@ -316,55 +461,72 @@
   </footer>
 
   <script>
-    // 模擬網站內容數據
-    const siteContent = [
-      { title: "首頁", content: "華翔興業有限公司專注於提供高品質有機顏料、溶劑染料、螢光增白劑及光固化劑TPO，為塗料、油墨、塑料等產業提供專業解決方案。", url: "#home" },
-      { title: "有機顏料", content: "我們提供多種有機顏料，適用於各種應用，包括塗料、油墨和塑料。", url: "#products" },
-      { title: "溶劑染料", content: "高品質溶劑染料，適用於多種工業應用。", url: "#products" },
-      { title: "螢光增白劑", content: "提供優質螢光增白劑，為您的產品增添亮度。", url: "#products" },
-      { title: "光固化劑TPO", content: "專業的光固化劑TPO，適用於UV固化系統。", url: "#products" },
-      { title: "關於我們", content: "華翔興業有限公司是一家專業的顏料供應商，致力於為客戶提供高品質的有機顏料、溶劑染料和螢光增白劑。", url: "#about" },
-      { title: "聯絡我們", content: "電子郵件：sam@hwashine.tw，電話：02-87292906，地址：臺北市信義區信義路5段7號37樓", url: "#contact" }
-    ];
-
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
-    const searchResults = document.getElementById('search-results');
 
-    searchButton.addEventListener('click', performSearch);
+    function handleSearch() {
+      const searchQuery = searchInput.value.trim();
+      if (searchQuery) {
+        const encodedQuery = encodeURIComponent(searchQuery);
+        window.location.href = `https://hwashine.tw/products?search=${encodedQuery}`;
+      }
+    }
+
+    searchButton.addEventListener('click', handleSearch);
+
     searchInput.addEventListener('keypress', function(e) {
       if (e.key === 'Enter') {
-        performSearch();
+        handleSearch();
       }
     });
 
-    function performSearch() {
-      const query = searchInput.value.toLowerCase();
-      const results = siteContent.filter(item => 
-        item.title.toLowerCase().includes(query) || 
-        item.content.toLowerCase().includes(query)
-      );
-
-      displayResults(results);
-    }
-
-    function displayResults(results) {
-      searchResults.innerHTML = '';
-      if (results.length === 0) {
-        searchResults.innerHTML = '<p>沒有找到相關結果。</p>';
-        return;
+    if (window.location.pathname === '/products') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchParam = urlParams.get('search');
+      
+      if (searchParam) {
+        const decodedSearch = decodeURIComponent(searchParam);
+        searchInput.value = decodedSearch;
       }
-
-      results.forEach(result => {
-        const resultItem = document.createElement('div');
-        resultItem.className = 'search-result-item';
-        resultItem.innerHTML = `
-          <h3><a href="${result.url}">${result.title}</a></h3>
-          <p>${result.content}</p>
-        `;
-        searchResults.appendChild(resultItem);
-      });
     }
+
+    // Add pagination JavaScript
+    const newsCards = document.querySelectorAll('.news-card');
+    const itemsPerPage = 5;
+    let currentPage = 1;
+    const totalPages = Math.ceil(newsCards.length / itemsPerPage);
+
+    const prevButton = document.getElementById('prevPage');
+    const nextButton = document.getElementById('nextPage');
+
+    function showPage(page) {
+      const start = (page - 1) * itemsPerPage;
+      const end = start + itemsPerPage;
+      
+      newsCards.forEach((card, index) => {
+        card.style.display = (index >= start && index < end) ? 'block' : 'none';
+      });
+      
+      prevButton.disabled = page === 1;
+      nextButton.disabled = page === totalPages;
+    }
+
+    prevButton.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    });
+
+    nextButton.addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        showPage(currentPage);
+      }
+    });
+
+    // Initialize first page
+    showPage(1);
   </script>
 </body>
 </html>
